@@ -33,9 +33,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Wait PostrSQL enviropmet
-        run: sleep 10
-
       - name: Build and test Maven
         run: mvn clean test
         env:
